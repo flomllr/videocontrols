@@ -18,7 +18,6 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 	if(request.action === "SET_VIDEO_SPEED") {
 		const {id, speed} = request.payload;
 		const handler = videoHandlers[id];
-		console.log(handler);
 		if(handler) {
 			handler(speed);
 		}
