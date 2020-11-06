@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 			});
 			
-			console.log(videoElement, valueElement, this.value);
 		}
 		
 		const wrapper = document.createElement('div');
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	chrome.tabs.getSelected(null, function(tab) {
 		chrome.tabs.sendRequest(tab.id, {action: 'GET_VIDEOS'}, (response) => {
-			console.log(response);
 			const {videos} = response;
 			videos.forEach(insertSlider);
 		});
