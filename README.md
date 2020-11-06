@@ -1,5 +1,5 @@
 # Video controls
-Increase/decrease the playback rate of any video on any website.
+Increase/decrease the playback rate of any video on any website (including BBB).
 
 # Installation
 1. Go to chrome://extensions/ and check the box for Developer mode in the top right.
